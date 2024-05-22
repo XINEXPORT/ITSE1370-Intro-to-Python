@@ -53,3 +53,4 @@ total_weight = (num_dogs * dog_weight) + (num_cobras * cobra_weight) + (num_eagl
 
 print('Weight:', total_weight)
 
+
