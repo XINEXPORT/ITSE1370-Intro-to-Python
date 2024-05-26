@@ -1,28 +1,28 @@
-# #List colors_list contains four strings read from input. Create a set named unique_colors containing the unique strings in colors_list.
-# colors_list = [input(), input(), input(), input()]
+#List colors_list contains four strings read from input. Create a set named unique_colors containing the unique strings in colors_list.
+colors_list = [input(), input(), input(), input()]
 
-# unique_colors = set(colors_list)
+unique_colors = set(colors_list)
 
-# print(sorted(unique_colors))
+print(sorted(unique_colors))
 
-# ###############################
+###############################
 
-# animals_remaining = set()
+animals_remaining = set()
 
-# new_animal1 = input()
-# new_animal2 = input()
-# new_animal3 = input()
-# new_animal4 = input()
-# animals_remaining.add(new_animal1)
-# animals_remaining.add(new_animal2)
-# animals_remaining.add(new_animal3)
-# animals_remaining.add(new_animal4)
+new_animal1 = input()
+new_animal2 = input()
+new_animal3 = input()
+new_animal4 = input()
+animals_remaining.add(new_animal1)
+animals_remaining.add(new_animal2)
+animals_remaining.add(new_animal3)
+animals_remaining.add(new_animal4)
 
-# remove_animal = animals_remaining.pop()
+remove_animal = animals_remaining.pop()
 
-# num_animals = len(animals_remaining)
+num_animals = len(animals_remaining)
 
-# print(f'Number of values remaining: {num_animals}')  
+print(f'Number of values remaining: {num_animals}')  
 
 # ###############################
 
