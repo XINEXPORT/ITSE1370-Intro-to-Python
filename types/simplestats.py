@@ -1,37 +1,36 @@
-"""Given 4 floating-point numbers. Use a string formatting expression with conversion specifiers to output their product 
-and their average as integers (rounded), then as floating-point numbers.
+# """Given 4 floating-point numbers. Use a string formatting expression with conversion specifiers to output their product 
+# and their average as integers (rounded), then as floating-point numbers.
 
-Output each rounded integer using the following:
-print(f'{your_value:.0f}')
-Output each floating-point value with three digits after the decimal point, which can be achieved as follows:
-print(f'{your_value:.3f}')
+# Output each rounded integer using the following:
+# print(f'{your_value:.0f}')
+# Output each floating-point value with three digits after the decimal point, which can be achieved as follows:
+# print(f'{your_value:.3f}')
 
-input is
-8.3
-10.4
-5.0
-4.8
+# input is
+# 8.3
+# 10.4
+# 5.0
+# 4.8
 
-output is
-2072 7
-2071.680 7.125
-"""
+# output is
+# 2072 7
+# 2071.680 7.125
+# """
 num1 = float(input())
-# num2 = float(input())
-# num3 = float(input())
-# num4 = float(input())
+num2 = float(input())
+num3 = float(input())
+num4 = float(input())
 
-int_num = int(num1)
-str_num1 = str(num1).split('.')
-merge = int(str(int_num) + str_num1)
+product = num1 * num2 * num3 * num4
+average = (num1 + num2 + num3 + num4) / 4
 
-print(merge)
-# product = num1 * num1 * num3 * num4
-# average = (num1 + num2 + num3 + num4) / 4
+rounded_product = round(product)
+rounded_average = round(average)
 
-# float_product = float(product)
+float_product = '{:.3f}'.format(product)
+float_avg = '{:.3f}'.format(average)
 
-# print(f'{product:.0f} {average:.0f}')
-# print(f'{float_product:.3f} {average:.3f}')
+print(f'{rounded_product} {rounded_average}')
+print(f'{float_product} {float_avg}')
 
 
