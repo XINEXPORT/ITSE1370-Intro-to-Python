@@ -17,16 +17,21 @@ output is
 2071.680 7.125
 """
 num1 = float(input())
-num2 = float(input())
-num3 = float(input())
-num4 = float(input())
+# num2 = float(input())
+# num3 = float(input())
+# num4 = float(input())
 
-product = num1 * num1 * num3 * num4
-average = (num1 + num2 + num3 + num4) / 4
+int_num = int(num1)
+str_num1 = str(num1).split('.')
+merge = int(str(int_num) + str_num1)
 
-float_product = float(product)
+print(merge)
+# product = num1 * num1 * num3 * num4
+# average = (num1 + num2 + num3 + num4) / 4
 
-print(f'{product:.0f} {average:.0f}')
-print(f'{float_product:.3f} {average:.3f}')
+# float_product = float(product)
+
+# print(f'{product:.0f} {average:.0f}')
+# print(f'{float_product:.3f} {average:.3f}')
 
 
