@@ -43,3 +43,52 @@ else:
 
 print(total_difference)
 
+##################
+# If num_wheels is 12, output 'Twelve-wheel drive'. Otherwise, output 'Not a twelve-wheel drive'.
+
+num_wheels = int(input())
+
+if num_wheels == 12:
+    print ('Twelve-wheel drive')
+else: 
+    print('Not a twelve-wheel drive')
+    
+    
+##################
+# If number_of_years is:
+# 10, output 'Decade'.
+# 100, output 'Century'.
+# Otherwise, output 'Other time duration'.
+
+number_of_years = int(input())
+
+if number_of_years == 10:
+    print('Decade')
+elif number_of_years == 100:
+    print('Century')
+else: 
+    print('Other time duration')
+    
+    
+##################    
+# If num_musicians is:
+# 3, output 'Trio'.
+# 4, output 'Quartet'.
+# 5, output 'Quintet'.
+# Otherwise, output 'Other number of musicians'.
+
+num_musicians = int(input())
+
+if num_musicians == 3:
+    print('Trio')
+elif num_musicians == 4:
+    print('Quartet')
+elif num_musicians == 5:
+    print('Quintet')
+else: 
+    print('Itsa Orchestra, bitch!')
+
+
+
+
+
