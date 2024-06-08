@@ -62,3 +62,37 @@ while num_in >= 1:
     num_in = int(input())
 
 print(f'Result is {result}')
+
+############################
+
+input_num = int(input())
+
+while input_num !=-5 :
+    print('Not found -5 yet')
+    input_num = int(input())
+
+print('Found -5!')
+
+############################
+
+input_word = input()
+
+while input_word != 'Over':
+    item_count= int(input())
+    if item_count < 45:
+        print(input_word + ': reorder soon')
+    input_word = input()
+    
+############################
+
+previous_val = int(input())
+current_val = int(input())
+print(f'Sequence starts at {previous_val}.')
+
+
+while current_val >= previous_val:
+    print(str(current_val) + ' is greater than or equal to ' + str(previous_val) + '. Sequence is not decreasing.')
+    previous_val = current_val
+    current_val = int(input())
+    
+print(f'{current_val} breaks the sequence.')        
