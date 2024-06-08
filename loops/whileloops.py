@@ -5,10 +5,14 @@ while value_in >= -1.0:
 
 print('Loop terminated')
 
+############################
+
 input_num = float(input())
 while input_num > 1.0:
     input_num /= 8.0
     print(round(input_num, 1))
+    
+############################
 
 import random
 random.seed(5)
@@ -21,6 +25,9 @@ while keep_bidding == 'y':
    print(f'I\'ll bid ${next_bid}!')
    print('Continue bidding? (y/n)', end=' ')
    keep_bidding = input()
+   
+   
+############################
 
 """
 Given positive integer num_insects, write a while loop that prints, then doubles, num_insects each iteration. 
@@ -41,4 +48,17 @@ while num_successes < 2:
     if curr_intensity > 0:
         print(curr_intensity)
         num_successes += 1
+        
+############################
 
+result = 0
+num_in = int(input())
+
+while num_in >= 1:
+    if num_in % 4 == 0:
+        result += num_in
+    else:
+        result   -= num_in
+    num_in = int(input())
+
+print(f'Result is {result}')
